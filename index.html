@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>魂卡展示</title>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="card-container">
+      <h2>魂卡展示</h2>
+	   <img src="img/bg.png"  class="bg1">
+      <!-- 直接在HTML中放置左側的卡牌圖片元素和生成按鈕 -->
+      <table id="cardTable">
+        <!-- 第一行 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSBaLei.png" alt="Default Card" onclick="generateCard('CardSBaLei')">
+            <button onclick="generateCard('CardSBaLei')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSBaqi.png" alt="Default Card">
+            <button onclick="generateCard('CardSBaqi')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSBlackCat.png" alt="Default Card">
+            <button onclick="generateCard('CardSBlackCat.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+        <!-- 第二行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSChuNvZuo.png" alt="Default Card">
+            <button onclick="generateCard('CardSChuNvZuo')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSDaisite.png" alt="Default Card">
+            <button onclick="generateCard('CardSDaisite')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSDandelion.png" alt="Default Card">
+            <button onclick="generateCard('CardSDandelion.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+        <!-- 第三行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+
+            <img src="img/CardSDaoDiaoRen.png" alt="Default Card">
+            <button onclick="generateCard('CardSDaoDiaoRen')">生成</button>
+	
+			</div>
+          </td>
+          <td>
+			<div>
+
+            <img src="img/CardSDunqishi.png" alt="Default Card">
+            <button onclick="generateCard('CardSDunqishi')">生成</button>
+
+			
+			</div>
+          </td>
+          <td>
+			<div>
+
+            <img src="img/CardSFish.png" alt="Default Card">
+            <button onclick="generateCard('CardSFish.png')">生成</button>
+
+			</div>
+          </td>
+        </tr>
+        <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSGerbera.png" alt="Default Card">
+            <button onclick="generateCard('CardSGerbera')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSGuangMingNvPu.png" alt="Default Card">
+            <button onclick="generateCard('CardSGuangMingNvPu')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSHeimao2.png" alt="Default Card">
+            <button onclick="generateCard('CardSHeimao2.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSJiaoHuang.png" alt="Default Card">
+            <button onclick="generateCard('CardSJiaoHuang')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSJuXieZuo.png" alt="Default Card">
+            <button onclick="generateCard('CardSJuXieZuo')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSLangLing.png" alt="Default Card">
+            <button onclick="generateCard('CardSLangLing.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSLianRen.png" alt="Default Card">
+            <button onclick="generateCard('CardSLianRen')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSLily.png" alt="Default Card">
+            <button onclick="generateCard('CardSLily')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSLotus.png" alt="Default Card">
+            <button onclick="generateCard('CardSLotus.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSLycoris.png" alt="Default Card">
+            <button onclick="generateCard('CardSLycoris')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSLycorisWhite.png" alt="Default Card">
+            <button onclick="generateCard('CardSLycorisWhite')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSMaple.png" alt="Default Card">
+            <button onclick="generateCard('CardSMaple.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+  
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSMoFaShaoNv.png" alt="Default Card">
+            <button onclick="generateCard('CardSMoFaShaoNv')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSMojie.png" alt="Default Card">
+            <button onclick="generateCard('CardSMojie')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSMoon.png" alt="Default Card">
+            <button onclick="generateCard('CardSMoon.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSNanyuzuo.png" alt="Default Card">
+            <button onclick="generateCard('CardSNanyuzuo')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSNingFu.png" alt="Default Card">
+            <button onclick="generateCard('CardSNingFu')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSNvJiSi.png" alt="Default Card">
+            <button onclick="generateCard('CardSNvJiSi.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSQueen.png" alt="Default Card">
+            <button onclick="generateCard('CardSQueen')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSSheshou.png" alt="Default Card">
+            <button onclick="generateCard('CardSSheshou')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSShizizuo.png" alt="Default Card">
+            <button onclick="generateCard('CardSShizizuo.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSShuiping.png" alt="Default Card">
+            <button onclick="generateCard('CardSShuiping')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSSiShen.png" alt="Default Card">
+            <button onclick="generateCard('CardSSiShen')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSSkyLight.png" alt="Default Card">
+            <button onclick="generateCard('CardSSkyLight.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSStar.png" alt="Default Card">
+            <button onclick="generateCard('CardSStar')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSStrawberry.png" alt="Default Card">
+            <button onclick="generateCard('CardSStrawberry')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSTianxie.png" alt="Default Card">
+            <button onclick="generateCard('CardSTianxie.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSTower.png" alt="Default Card">
+            <button onclick="generateCard('CardSTower')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSXianNvZuo.png" alt="Default Card">
+            <button onclick="generateCard('CardSXianNvZuo')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSXiaoMoNan.png" alt="Default Card">
+            <button onclick="generateCard('CardSXiaoMoNan.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSXiaoMoNv.png" alt="Default Card">
+            <button onclick="generateCard('CardSXiaoMoNv')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSXueXu.png" alt="Default Card">
+            <button onclick="generateCard('CardSXueXu')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+            <img src="img/CardSYuZaoQian2.png" alt="Default Card">
+            <button onclick="generateCard('CardSYuZaoQian2.png')">生成</button>
+			</div>
+          </td>
+        </tr>
+ <!-- 第四行，省略，根據需要自行添加 -->
+        <tr>
+          <td>
+			<div>
+            <img src="img/CardSZhengYi.png" alt="Default Card">
+            <button onclick="generateCard('CardSZhengYi')">生成</button>
+			</div>
+          </td>
+          <td>
+			<div>
+           
+			</div>
+          </td>
+          <td>
+			<div>
+          
+			</div>
+          </td>
+        </tr>
+      </table>	  
+    </div>
+    <div class="preview-container">
+      <h3>語法 與 預覽</h3>
+      <!--  <div id="cardPreview" class="image-preview">複製左側卡牌的網址將在這裡顯示</div> -->  
+	  <div>
+	  <br /><input type="radio" name="checkboxName" id="big">大<input type="radio" name="checkboxName" id="small" checked>小
+	  </div>
+	 <textarea id="cardPreview" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
