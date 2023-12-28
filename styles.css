@@ -201,7 +201,7 @@ button:hover {
 	textarea
 	{
 		font-size: unset;
-		position:fixed;
+		position:absolute;
 		right:0px;
 		width: 80%;
 		top:20%;
