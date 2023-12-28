@@ -126,11 +126,13 @@ textarea {
 
 
 button {
-	margin-left: 150px;
+	/*margin-left: 150px;*/
+	margin-left: 25%;
     display: inline-block;
     position: relative;
     z-index: 1;
-    min-width: 200px;
+    /*min-width: 200px;*/
+	width:40%;
     background: #FFFFFF;
     border: 2px solid goldenrod;
     border-radius: 3rem;
