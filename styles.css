@@ -183,6 +183,7 @@ button:hover {
 		border-right:unset;
 	}
 	.preview-container {
+		z-index: 999;
 		width: 100%;
 		left: 0%;
 		top:unset;
