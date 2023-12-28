@@ -1,50 +1,41 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("img/bg2.jpg");
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url("img/bg2.jpg");
+	color:balck;
 }
 
-.container {
-  display: flex;
-}
 
-.card-container {
-  width: 73%;
-  padding: 20px;
-}
-.preview-container {
-  width: 27%;
-  padding: 20px;
-  
-  position: fixed;
-  left: 73%;
-  top: 0;
-}
-.preview-container div{
-
-	padding-left: 15%;
-	padding-top: 15%;
-
-}
 .bg1 {
-	
-	 width: 79%;
-	 height: 150%;
-	
-	 /*width: 78%;
-	 height: 280%;
-	 */
+	width: 70%;
 	z-index:-1;
-	position:absolute;
-	left:0px; top:-22px;
-	clip:rect(0px 60% 100px 0px);
-	position: fixed;
+	position:fixed ;
+	left:0%;
+	top:0%;
+
+}
+
+
+#cardTable{
+	width:100%;
+}
+img
+{
+	width:85%;
 }
 
 .card-container {
-  border-right: 1px solid #ccc;
+	width: 70%;
+	border-right: 1px solid #ccc;
+	
 }
+
+.card-container div{
+	padding-top: 5%;
+	padding-bottom: 18%;
+}
+
 .card-container div img{
   margin:auto;
   display:block;
@@ -57,37 +48,26 @@ body {
 
 }
 
-.card-container td{
-
+.preview-container {
+	left: 75%;
+	right:5%;
+	top:0%;
+	height:30%;
+	position:fixed;
 }
+
+
+
 
 .card-container div img:hover{
-
-  filter:drop-shadow(0px 0px 10px rgba(0,170,240,.8)) contrast(110%);
-  
-	/*-webkit-transform: rotateX(-33.5deg) rotateY(45deg);
-    transform: rotateX(-20deg) rotateY(20deg);
-    transition: 0.2s transform ease-out;
-    will-change: transform;
-	*/
+	filter:drop-shadow(0px 0px 10px rgba(0,170,240,.8)) contrast(110%);
 	animation: rotation1 0.2s 1 ease-out;
-	
 }
+
 .card-container div img:active{
-
-  filter:drop-shadow(0px 0px 10px rgba(0,170,240,.8)) contrast(110%);
-  
-	/*-webkit-transform: rotateX(-33.5deg) rotateY(45deg);
-    transform: rotateX(-20deg) rotateY(20deg);
-    transition: 0.2s transform ease-out;
-    will-change: transform;
-	*/
-	animation: rotation2 1s 1 ease-out;
-	
+	filter:drop-shadow(0px 0px 10px rgba(0,170,240,.8)) contrast(110%);
+	animation: rotation2 1s 1 ease-out;	
 }
-
-
-
 
 @keyframes rotation1 {
     0% {
@@ -103,7 +83,7 @@ body {
 
 @keyframes rotation2 {
     0% {
-        transform: rotateX(-0deg) rotateY(0deg);/*transform: rotate(0deg);*/
+        transform: rotateX(-0deg) rotateY(0deg);
     }
     100% {
         transform: rotateX(-20deg) rotateY(360deg);
@@ -111,54 +91,39 @@ body {
 
 }
 
-.card-container div{
-  min-width:498px;
-  min-height:655px;
-}
 
 h2 {
-  font-size: 50px;
-  position:absolute;left:0px; top:-45px;
-  color:rgba(255, 201, 14,0.7);
-  /*background-color:rgba(160, 160, 160,0.2);*/
-  filter:drop-shadow(0px 0px 10px rgba(255,255,255,.8));
+	font-size: 50px;
+	position:absolute;left:0px; top:-45px;
+	color:rgba(255, 201, 14,0.7);
+	/*background-color:rgba(160, 160, 160,0.2);*/
+	filter:drop-shadow(0px 0px 10px rgba(255,255,255,.8));
 }
+
 h3 {
-  font-size: 50px;
-  /*position:absolute;left:79%; top:-45px;*/
-  position:absolute;left:20%; top:-45px;
-  color:rgba(255, 201, 14,0.99);
-  /*background-color:rgba(160, 160, 160,0.9);*/
-  filter:drop-shadow(0px 0px 10px rgba(0,0,0,.9));
-  /*border-radius: 10px;*/
+	font-size: 50px;
+	color:rgba(255, 201, 14,0.99);
+	/*background-color:rgba(160, 160, 160,0.9);*/
+	filter:drop-shadow(0px 0px 10px rgba(0,0,0,.9));
+	/*border-radius: 10px;*/
 
 }
-
-
 
 textarea {
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   resize: none;
   font-size: 25px;
   background-color:rgba(30, 30, 30,0.5);
   color:rgba(255, 255, 230,0.8);
   border-radius: 10px;
-  position:relative;left:10%; top:50px;
+
   filter:drop-shadow(0px 0px 10px rgba(0,0,0,.9));
   box-shadow: 5px 5px 10px rgba(0,0,0,.3);
 }
 
 
-.test
-{
-	font-size: 25px;
-	color:rgba(255, 255, 230,0.8);	
-}
-h4 {
-	font-size: 40px;
-	margin-bottom: 00px;
-}
+
 
 button {
 	margin-left: 150px;
@@ -204,4 +169,38 @@ button:hover {
     color: #FFFFFF;
     transform: scale(1.05);
     will-change: transform;
+}
+
+@media screen and (max-width:900px)
+{
+	.bg1 {
+		width: 100%;
+	}
+	.card-container {
+		width: 100%;
+		border-right:unset;
+	}
+	.preview-container {
+		width: 100%;
+		left: 0%;
+		top:unset;
+		height: 30%;
+		bottom:0%;
+		position:fixed;
+		background-color:rgba(0, 0, 0,0.7);
+		border-radius: 10px;
+		color:#FFFFFF;
+		backdrop-filter: blur(5px);
+	}
+	h3 {
+		font-size: unset;
+	}
+	textarea
+	{
+		font-size: unset;
+		position:fixed;
+		right:0px;
+		width: 80%;
+		top:20%;
+	}
 }
