@@ -151,14 +151,16 @@
 		var cardPreview = document.getElementById("cardPreview");
 		var str="Null";
 		var ps=list_icon[id][0];
-		var x=list_icon[id][1]*1.5;
-		var y=list_icon[id][2]*1.5;
+		var x=list_icon[id][1]*1.2;
+		var y=list_icon[id][2]*1.2;
 
 	  if(document.getElementById('big'). checked == true)
 	  {
-		  x=x*1.3;
-		  y=y*1.3;
+		  x=x*1.6;
+		  y=y*1.6;
 	  }
+	  x=Math.round(x);
+	  y=Math.round(y);
 		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]";
 		cardPreview.innerHTML=str;
 		//
