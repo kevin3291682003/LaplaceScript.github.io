@@ -11,6 +11,12 @@
 		['CardSSkyLight',396,512],['CardSStar',397,511],['CardSStrawberry',397,511],['CardSTianxie',396,512],
 		['CardSTower',397,511],['CardSXianNvZuo',397,511],['CardSXiaoMoNan',396,512],['CardSXiaoMoNv',396,512],
 		['CardSXueXu',396,512],['CardSYuZaoQian2',396,512],['CardSZhengYi',396,512],
+		
+		
+		//連動
+		['CardCinnamorollA',396,512],
+		['CardCinnamorollB',396,512],['CardCinnamorollC',396,512],['CardCinnamorollD',396,512],['CardCinnamorollE',396,512],
+
 	];
 	var list_icon =[
 		['limao01',90,90],['limao02',90,85],['limao03',90,81],['limao04',91,82],['limao05',90,88],
