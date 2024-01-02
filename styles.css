@@ -222,6 +222,9 @@ button:hover {
 		color:#FFFFFF;
 		backdrop-filter: blur(5px);
 	}
+	h2 {
+		font-size: 44px;
+	}
 	h3 {
 		font-size: unset;
 	}

@@ -146,7 +146,14 @@
 		  y=y*2;
 	  }
 		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]";
-		cardPreview.innerHTML=str;	
+		cardPreview.innerHTML=str;
+		
+	  const el = document.createElement('textarea');
+	  el.value = str;
+	  document.body.appendChild(el);
+	  el.select();
+	  document.execCommand('copy');
+	  document.body.removeChild(el);		
 	}
 
 
