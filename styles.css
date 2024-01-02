@@ -12,7 +12,7 @@ body {
 	z-index:-1;
 	position:fixed ;
 	left:0%;
-	top:0%;
+	top:5%;
 
 }
 
@@ -20,7 +20,7 @@ body {
 #cardTable{
 	width:100%;
 }
-img
+.card-container .card img
 {
 	width:85%;
 }
@@ -31,14 +31,30 @@ img
 	
 }
 
-.card-container div{
+.card-container .card{
+	padding-top: 13%;
+	padding-bottom: 18%;
+}
+
+.card-container .icon{
 	padding-top: 5%;
 	padding-bottom: 18%;
 }
 
-.card-container div img{
+.card-container .card img{
   margin:auto;
   display:block;
+  filter:drop-shadow(0px 0px 10px rgba(255,255,255,.5));
+  border-radius: 10px;
+  background-color:rgba(250, 250, 250,0.25);
+  box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+  -webkit-box-reflect: below 20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+  
+
+}
+.card-container .icon img{
+ 
+  margin: 1%;
   filter:drop-shadow(0px 0px 10px rgba(255,255,255,.5));
   border-radius: 10px;
   background-color:rgba(250, 250, 250,0.25);
@@ -98,8 +114,13 @@ h2 {
 	color:rgba(255, 201, 14,0.7);
 	/*background-color:rgba(160, 160, 160,0.2);*/
 	filter:drop-shadow(0px 0px 10px rgba(255,255,255,.8));
-}
 
+}
+h2 label{
+	 border-radius: 10px;
+	background-color:rgba(10, 10, 10,0.5);
+	box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
 h3 {
 	font-size: 50px;
 	color:rgba(255, 201, 14,0.99);
@@ -173,6 +194,12 @@ button:hover {
     will-change: transform;
 }
 
+#iconPreview {
+	width: 70%;
+	border-right: 1px solid #ccc;
+	
+}
+
 @media screen and (max-width:900px)
 {
 	.bg1 {
@@ -206,7 +233,7 @@ button:hover {
 		width: 80%;
 		top:20%;
 	}
-	.cellphoneEnd td{
+	.cellphoneEnd {
 		padding-bottom: 300px;
 
 	}
@@ -214,10 +241,10 @@ button:hover {
 
 @supports(-webkit-touch-callout:none) {
     /*针对IOS的css*/
-	.card-container div img:active{
+	.card-container .card img:active{
 		animation: unset;	
 	}
-	.card-container div img:hover{
+	.card-container .card img:hover{
 		animation: unset;
 	}	
 }
