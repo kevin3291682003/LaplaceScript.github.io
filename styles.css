@@ -259,4 +259,7 @@ button:hover {
 	.card-container div img:hover{
 		animation: unset;
 	}	
+	h2 {
+		font-size: 38px;
+	}	
 }
