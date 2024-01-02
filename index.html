@@ -35,10 +35,12 @@
 				<!--複製左側卡牌的網址將在這裡顯示</div> -->  
 				<div>
 					<br/>
-					<label><input type="radio" name="checkboxName" id="big">大</label>
-					<label><input type="radio" name="checkboxName" id="small" checked>小</label>
+					<label><input type="radio" name="checkboxName" id="big" onclick="SizeModify()">大</label>
+					<label><input type="radio" name="checkboxName" id="small" onclick="SizeModify()" checked>小</label>
 				</div>
 				<textarea id="cardPreview" readonly></textarea>
+			<div id="preview-img">
+			</div>
 			</div>
 			
 		</div>

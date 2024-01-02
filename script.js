@@ -62,6 +62,7 @@
 		['qq93',94,77],['qq94',94,77],['qq95',94,77],['qq96',94,77],
 	];
 //Fun=================================================
+	var fun=0,item=0;
 	//Initial-------
 	function Initial()
 	{
@@ -102,9 +103,12 @@
 		  y=y*2;
 	  }
 	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]";
-
-
 		cardPreview.innerHTML=str;
+		//
+		var imgHtml = document.getElementById("preview-img");
+		var imgTxt="NULL";
+		imgTxt = "<img src=\"img\\" + CardId + ".png\" width=\""+x/3+"\" height=\""+y/3+"\">";
+		imgHtml.innerHTML=imgTxt;
 
 	const el = document.createElement('textarea');
 	  el.value = str;
@@ -112,6 +116,9 @@
 	  el.select();
 	  document.execCommand('copy');
 	  document.body.removeChild(el);
+	  
+	  fun=0;
+	  item=cardNumber;
 	}
 
 	//Generate Icon List Show HTML-------
@@ -147,13 +154,28 @@
 	  }
 		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]";
 		cardPreview.innerHTML=str;
+		//
+		var imgHtml = document.getElementById("preview-img");
+		var imgTxt="NULL";
+		imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+x+"\" height=\""+y+"\">";
+		imgHtml.innerHTML=imgTxt;
 		
 	  const el = document.createElement('textarea');
 	  el.value = str;
 	  document.body.appendChild(el);
 	  el.select();
 	  document.execCommand('copy');
-	  document.body.removeChild(el);		
+	  document.body.removeChild(el);	
+	  fun=1;
+	  item=id;
+	}
+	
+	function SizeModify()
+	{
+		if(fun==0)
+			generateCard(item);
+		else
+			ChatCode(item);
 	}
 
 
