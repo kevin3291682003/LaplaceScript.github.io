@@ -200,6 +200,13 @@ button:hover {
 	
 }
 
+#preview-img
+{
+	z-index: 100;
+	position: absolute;
+	filter:drop-shadow(0px 0px 10px rgba(128,180,200,.8)) contrast(110%);
+}
+
 @media screen and (max-width:900px)
 {
 	.bg1 {
