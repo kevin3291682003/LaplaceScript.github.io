@@ -1,5 +1,7 @@
 //Resource List=================================================
 	var list_SCard =[
+		['CardSShanHu',397,511],['CardSShanHuNan',397,511],['CardSPine',396,512],['CardSHuangDi',396,512],
+		['CardSALiLadybug',396,512],['CardSALiBee',396,512],
 		['CardSDaffodil',397,511],['CardSFenYing',397,511],['CardSMuDan',396,512],['CardSZiYing',397,511],
 		['CardSXiaoMoNv',396,512],['CardSBaLei',396,512],['CardSBaqi',396,512],['CardSBlackCat',397,511],['CardSChuNvZuo',397,511],
 		['CardSDaisite',396,512],['CardSDandelion',397,511],['CardSDaoDiaoRen',396,512],['CardSDunqishi',396,512],
