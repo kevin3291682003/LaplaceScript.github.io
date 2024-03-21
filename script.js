@@ -77,7 +77,8 @@
 		
 	];
 //Fun=================================================
-	var fun=0,item=0;
+	var fun=1;//預設標籤
+	var item=0;
 	//Initial-------
 	function Initial()
 	{
@@ -139,7 +140,7 @@
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<div id='ShowStyle'><img src=\"img\\" + CardId + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
+		imgTxt = "<div id='ShowStyle' class='align_top'><img src=\"img\\" + CardId + ".png\" width=\""+Sx+"\" height=\""+Sy+"\" >"+sTx+"</div>";
 		imgHtml.innerHTML=imgTxt;
 
 	const el = document.createElement('textarea');
