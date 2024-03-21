@@ -264,10 +264,6 @@ button:hover {
 	background-color:rgba(252, 244, 225,1);
 	animation: move .4s 1 ease-out;
 }
-.align_top img
-{
-	vertical-align:top;
-}
 
 /* 商標 */
 	.emblem {
@@ -389,7 +385,11 @@ button:hover {
 	.emblem {
 		left: 0%;
 		top: 50%;
-	}
+	}	
+	.align_top img
+	{
+		vertical-align:top;
+	}	
 }
 
 @supports(-webkit-touch-callout:none) {
