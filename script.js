@@ -123,6 +123,8 @@
 	  //}
 	  x=Math.round(x);
 	  y=Math.round(y);
+	  var Sx=x/2.5;
+	  var Sy=y/2.5;
 	  ShowColor();
 	  	  var tx=document.getElementById('text').value;
 	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
@@ -130,7 +132,7 @@
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<img src=\"img\\" + CardId + ".png\" width=\""+x/3+"\" height=\""+y/3+"\">"+tx;
+		imgTxt = "<img src=\"img\\" + CardId + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+tx;
 		imgHtml.innerHTML=imgTxt;
 
 	const el = document.createElement('textarea');
@@ -203,8 +205,8 @@
 	  x=Math.round(x);
 	  y=Math.round(y);
 	  
-	  var Sx=x/3;
-	  var Sy=y/3;
+	  var Sx=x/2.5;
+	  var Sy=y/2.5;
 	  ShowColor();
 	  var tx=document.getElementById('text').value;
 		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
