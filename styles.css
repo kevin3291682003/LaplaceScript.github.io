@@ -403,4 +403,8 @@ button:hover {
 	h2 {
 		font-size: 35px;
 	}	
+	textarea
+	{
+		top:60%;
+	}
 }
