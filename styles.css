@@ -76,7 +76,12 @@ body {
 	height:30%;
 	position:fixed;
 }
-
+.contral
+{
+	
+	/*display: flex;
+	justify-content: flex-end;*/
+}
 
 
 
@@ -305,4 +310,62 @@ button:hover {
 	h2 {
 		font-size: 40px;
 	}	
+}
+/* 商標 */
+	.emblem {
+		position: absolute;
+		left: 80px;
+		top: 80px;
+		width: 240px;
+		height: 240px;
+		border-radius: 50%;
+		color: #7D970B;
+		text-align: center;
+		/* overflow: hidden; */
+		/* border: 5px solid red; */
+		animation: shaking .2s steps(6,end) infinite;
+	}
+	.emblem span {
+		position: absolute;
+		display: inline-block;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		font-size: 30px;
+		color: #FFF;
+		font-weight: 900;
+		/*transition: all 0.5s cubic-bezier(0,0,0,1);*/
+	}
+	
+@keyframes shaking {
+    0% {
+        filter: drop-shadow(0.3px 0.3px 0 #0ff) drop-shadow(-0.3px -0.3px 0 #f00);
+        //transform: translate(1px,1px)
+    }
+
+    20% {
+        filter: drop-shadow(-0.3px 0.3px 0 #0ff) drop-shadow(0.3px -0.3px 0 #f00);
+        //transform: translate(-2px,1px)
+    }
+
+    40% {
+        filter: drop-shadow(0.3px -0.3px 0 #0ff) drop-shadow(0.3px -0.3px 0 #f00);
+        //transform: translate(1px,-1px)
+    }
+
+    60% {
+        filter: drop-shadow(-0.3px -0.3px 0 #0ff) drop-shadow(0.3px 0.3px 0 #f00);
+        //transform: translate(-1px,-1px)
+    }
+
+    80% {
+        filter: drop-shadow(-0.2px 0.3px 0 #0ff) drop-shadow(-0.3px 0.2px 0 #f00);
+        //transform: translate(2px,0px)
+    }
+
+    100% {
+        filter: drop-shadow(-0.3px 0.1px 0 #0ff) drop-shadow(0.1px -0.3px 0 #f00);
+        //transform: translate(1px,1px)
+    }
 }
