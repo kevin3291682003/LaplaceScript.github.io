@@ -203,8 +203,8 @@
 	  x=Math.round(x);
 	  y=Math.round(y);
 	  
-	  var Sx=x/2;
-	  var Sy=y/2;
+	  var Sx=x/3;
+	  var Sy=y/3;
 	  ShowColor();
 	  var tx=document.getElementById('text').value;
 		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
