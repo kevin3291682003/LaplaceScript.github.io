@@ -195,11 +195,11 @@
 		var cardPreview = document.getElementById("cardPreview");
 		var str="Null";
 		var ps=list_icon[id][0];
-		var x=list_icon[id][1]*1.2;
-		var y=list_icon[id][2]*1.2;
+		var x=list_icon[id][1]*1;
+		var y=list_icon[id][2]*1;
 
-	  x=x*CalRatio(1.6);
-	  y=y*CalRatio(1.6);
+	  x=x*CalRatio(1.92);
+	  y=y*CalRatio(1.92);
 	  //if(document.getElementById('big'). checked == true)
 	  //{
 		//  x=x*1.6;

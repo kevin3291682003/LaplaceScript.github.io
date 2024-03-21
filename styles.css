@@ -252,78 +252,15 @@ button:hover {
 {
 	color:rgba(128, 0, 0,0.5);
 }
-@media screen and (max-width:900px)
-{
-	.bg1 {
-		width: 100%;
-	}
-	.card-container {
-		width: 100%;
-		border-right:unset;
-	}
-	.preview-container {
-		z-index: 88;
-		width: 100%;
-		left: 0%;
-		top:unset;
-		height: 30%;
-		bottom:0%;
-		position:fixed;
-		background-color:rgba(0, 0, 0,0.7);
-		border-radius: 10px;
-		color:#FFFFFF;
-		backdrop-filter: blur(5px);
-	}
-	.preview-container #dat
-	{
-		color:rgba(255, 255, 255,0.5);
-	}
-	h2 {
-		font-size: 40px;
-	}
-	h3 {
-		font-size: unset;
-	}
-	textarea
-	{
-		font-size: unset;
-		position:absolute;
-		right:0px;
-		width: 80%;
-		top:20%;
-	}
-	.cellphoneEnd {
-		padding-bottom: 300px;
 
-	}
-	button{
-		width:unset;
-	}
-	.card-container .card{
-		padding-top: 40%;
-	}
-	.card-container .icon{
-		padding-top: 12%;
-	}
-}
-
-@supports(-webkit-touch-callout:none) {
-    /*针对IOS的css*/
-	.card-container div img:active{
-		animation: unset;	
-	}
-	.card-container div img:hover{
-		animation: unset;
-	}	
-	h2 {
-		font-size: 40px;
-	}	
-}
 /* 商標 */
 	.emblem {
 		position: absolute;
-		left: 80px;
-		top: 80px;
+		/*left: 80px;
+		top: 80px;*/
+		left: 0%;
+		top: 120%;
+		
 		width: 240px;
 		height: 240px;
 		border-radius: 50%;
@@ -372,4 +309,77 @@ button:hover {
     100% {
         filter: drop-shadow(-3px 1px 0 #0ff) drop-shadow(1px -3px 0 #f00);
     }
+}
+
+@media screen and (max-width:900px)
+{
+	.bg1 {
+		width: 100%;
+	}
+	.card-container {
+		width: 100%;
+		border-right:unset;
+	}
+	.preview-container {
+		z-index: 88;
+		width: 100%;
+		left: 0%;
+		top:unset;
+		height: 30%;
+		bottom:0%;
+		position:fixed;
+		background-color:rgba(0, 0, 0,0.7);
+		border-radius: 10px;
+		color:#FFFFFF;
+		backdrop-filter: blur(5px);
+	}
+	.preview-container #dat
+	{
+		color:rgba(255, 255, 255,0.5);
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: unset;
+	}
+	textarea
+	{
+		font-size: unset;
+		position:absolute;
+		right:0px;
+		width: 50%;
+		top:30%;
+		height:40%;
+	}
+	.cellphoneEnd {
+		padding-bottom: 300px;
+
+	}
+	button{
+		width:unset;
+	}
+	.card-container .card{
+		padding-top: 40%;
+	}
+	.card-container .icon{
+		padding-top: 12%;
+	}
+	.emblem {
+		left: 0%;
+		top: 50%;
+	}
+}
+
+@supports(-webkit-touch-callout:none) {
+    /*针对IOS的css*/
+	.card-container div img:active{
+		animation: unset;	
+	}
+	.card-container div img:hover{
+		animation: unset;
+	}	
+	h2 {
+		font-size: 40px;
+	}	
 }
