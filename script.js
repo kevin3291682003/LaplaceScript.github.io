@@ -88,6 +88,8 @@
 //Fun=================================================
 	var fun=1;//預設標籤
 	var item=0;
+	var cardPreview = document.getElementById("cardPreview");
+	var imgHtml = document.getElementById("preview-img");
 	//Initial-------
 	function Initial()
 	{
@@ -98,6 +100,9 @@
 	//Generate Card List Show HTML-------
 	function GenerateSCard()
 	{
+		fun=0;
+		document.getElementById("ComboCtrl").style.display="none";//隱藏ComboCtrl
+		
 		var imax=list_SCard.length;
 		var i=0;
 		var iconPreview = document.getElementById("cardTable");
@@ -118,7 +123,6 @@
 	//Generate Card Code-------
 	function generateCard(cardNumber) {
 	  // 在右側的預覽區顯示生成的卡牌網址
-	  var cardPreview = document.getElementById("cardPreview");
 	  var str = 'Card null!';
 	  var CardId=list_SCard[cardNumber][0];
 	  var x=list_SCard[cardNumber][1];
@@ -147,7 +151,6 @@
 	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]"+cTx;
 		cardPreview.innerHTML=str;
 		//
-		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
 		imgTxt = "<div id='ShowStyle' class='align_top'><img src=\"img\\" + CardId + ".png\" width=\""+Sx+"\" height=\""+Sy+"\" >"+sTx+"</div>";
 		imgHtml.innerHTML=imgTxt;
@@ -166,6 +169,8 @@
 	//Generate Icon List Show HTML-------
 	function GenerateChatIcon()
 	{
+		fun=1;
+		document.getElementById("ComboCtrl").style.display="block";//顯示ComboCtrl
 		var imax=list_icon.length;
 		var i=0;
 		var iconPreview = document.getElementById("cardTable");
@@ -182,39 +187,10 @@
 		
 		iconPreview.innerHTML=strTotal;
 	}
-	function QuickSize()
-	{
-		if(document.getElementById('big'). checked == true)
-			document.getElementById('IconSize').value=80;
-		if(document.getElementById('middle'). checked == true)
-			document.getElementById('IconSize').value=50;
-		if(document.getElementById('small'). checked == true)
-			document.getElementById('IconSize').value=20;
-	}
-	function CalRatio(rat)
-	{
-		var va=document.getElementById('IconSize').value;
-		var Rat1=(((rat)-1)/((80-50)/10));//if 50 =1:1,80=Max:1
-		var Rat2=Math.abs((va-50)/10);
-		if(va>=50)
-			return 1+(Rat1*Rat2);
-		if(va<50)
-			return 1/(1+(Rat1*Rat2));
-	}
-	function ShowColor()
-	{
-		//return;
-		var Col=document.getElementById('color').value;
-		var tx=document.getElementById('text').value;
-		document.getElementById('colorT').innerHTML="顏色:"+Col;
-		if(tx.length>0)document.getElementById('colorD').style.display="block";
-		else document.getElementById('colorD').style.display="none";
-	}
+	
 	//Generate Chat Code-------
 	var imgCodeCombo="";
 	var imgTxtCombo="";
-	var cardPreview = document.getElementById("cardPreview");
-	var imgHtml = document.getElementById("preview-img");
 	function ClearCombo()
 	{
 		imgCodeCombo="";
@@ -269,7 +245,7 @@
 		imgHtml.innerHTML="<div id='ShowStyle'>"+imgTxtCombo+"</div>";
 		
 	  const el = document.createElement('textarea');
-	  el.value = str;
+	  el.value = cardPreview.innerHTML;
 	  document.body.appendChild(el);
 	  el.select();
 	  document.execCommand('copy');
@@ -288,5 +264,32 @@
 			ChatCode(item);
 	}
 
-
+	function QuickSize()
+	{
+		if(document.getElementById('big'). checked == true)
+			document.getElementById('IconSize').value=80;
+		if(document.getElementById('middle'). checked == true)
+			document.getElementById('IconSize').value=50;
+		if(document.getElementById('small'). checked == true)
+			document.getElementById('IconSize').value=20;
+	}
+	function CalRatio(rat)
+	{
+		var va=document.getElementById('IconSize').value;
+		var Rat1=(((rat)-1)/((80-50)/10));//if 50 =1:1,80=Max:1
+		var Rat2=Math.abs((va-50)/10);
+		if(va>=50)
+			return 1+(Rat1*Rat2);
+		if(va<50)
+			return 1/(1+(Rat1*Rat2));
+	}
+	function ShowColor()
+	{
+		//return;
+		var Col=document.getElementById('color').value;
+		var tx=document.getElementById('text').value;
+		document.getElementById('colorT').innerHTML="顏色:"+Col;
+		if(tx.length>0)document.getElementById('colorD').style.display="block";
+		else document.getElementById('colorD').style.display="none";
+	}
 //[#p spr_path="" spr_name="IconLike231113" width="380" height="380"]
