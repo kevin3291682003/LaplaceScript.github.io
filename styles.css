@@ -178,7 +178,12 @@ textarea {
   filter:drop-shadow(0px 0px 10px rgba(0,0,0,.9));
   box-shadow: 5px 5px 10px rgba(0,0,0,.3);
 }
-
+#text{
+	background-color:rgba(30, 30, 30,0.5);
+	color:rgba(255, 255, 230,0.8);
+	 border-radius: 10px;
+	border: 1px solid rgba(255, 255, 230,0.5);
+}
 
 
 
@@ -240,11 +245,11 @@ button:hover {
 {
 	z-index: 100;
 	position: absolute;
+	top:120%;
 	filter:drop-shadow(0px 0px 10px rgba(128,180,200,.8)) contrast(110%);
 }	
 #preview-img img
 {
-
 	animation: move .4s 1 ease-out;	
 }
 
@@ -364,6 +369,10 @@ button:hover {
 	}
 	.card-container .icon{
 		padding-top: 12%;
+	}
+	#preview-img
+	{
+		top:50%;
 	}
 	.emblem {
 		left: 0%;
