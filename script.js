@@ -21,7 +21,7 @@
 		['CardCinnamorollB',396,512],['CardCinnamorollC',396,512],['CardCinnamorollD',396,512],['CardCinnamorollE',396,512],
 
 	];
-	var list_icon =[
+	var list_icon =[//texturepack_expressionicon
 		['limao01',90,90],['limao02',90,85],['limao03',90,81],['limao04',91,82],['limao05',90,88],['limao06',87,87],
 		['qq1',94,75],['qq2',94,75],['qq4',94,75],['qq5',94,75],
 		['qq6',94,75],['qq7',94,75],['qq8',94,76],['qq9',94,75],['qq10',94,75],
@@ -74,6 +74,15 @@
 		['qq181',94,77],['qq182',94,77],['qq183',94,77],['qq184',94,77],
 		['qq185',94,77],['qq186',94,77],['qq187',94,77],
 		['qq188',72,77],['qq189',94,77],['qq190',76,77],
+		
+		['IconDiyPattern1',77,77],['IconDiyPattern2',77,77],['IconDiyPattern3',77,77],
+		['IconDiyPattern4',77,77],['IconDiyPattern5',77,77],['IconDiyPattern6',77,77],['IconDiyPattern7',77,77],
+		['IconDiyPattern8',77,77],['IconDiyPattern9',77,77],['IconDiyPattern10',77,77],['IconDiyPattern11',77,77],
+		['IconDiyPattern12',77,77],['IconDiyPattern13',77,77],['IconDiyPattern14',77,77],['IconDiyPattern15',77,77],
+		['IconDiyPattern16',77,77],['IconDiyPattern17',77,77],['IconDiyPattern18',77,77],['IconDiyPattern19',77,77],
+		['IconDiyPattern20',77,77],['IconDiyPattern21',77,77],['IconDiyPattern22',77,77],['IconDiyPattern23',77,77],
+		['IconDiyPattern24',77,77],['IconDiyPattern25',77,77],['IconDiyPattern26',77,77],['IconDiyPattern27',77,77],
+		['IconDiyPattern28',77,77],['IconDiyPattern29',77,77],['IconDiyPattern30',77,77],['IconDiyPattern31',77,77],
 		
 	];
 //Fun=================================================
@@ -164,6 +173,8 @@
 		
 		for(i=0;i<imax;i++) {
 			var str1="<img src='img/icon/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";
+			if(list_icon[i][0].indexOf("IconDiyPattern")>=0)
+				str1="<img src='img/patten/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";
 			strTotal=strTotal+str1;
 		}
 		strTotal="<div class='icon'>"+strTotal;
@@ -203,7 +214,7 @@
 	function ChatCode(id)
 	{
 		var cardPreview = document.getElementById("cardPreview");
-		var str="Null";
+		var str="Null";		
 		var ps=list_icon[id][0];
 		var x=list_icon[id][1]*1;
 		var y=list_icon[id][2]*1;
@@ -228,7 +239,11 @@
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<div id='ShowStyle'><img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
+		
+		if(list_icon[id][0].indexOf("IconDiyPattern")>=0)
+			imgTxt = "<div id='ShowStyle'><img src=\"img\\patten\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
+		else
+			imgTxt = "<div id='ShowStyle'><img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
 		imgHtml.innerHTML=imgTxt;
 		
 	  const el = document.createElement('textarea');
