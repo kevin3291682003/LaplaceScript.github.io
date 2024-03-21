@@ -211,10 +211,21 @@
 		else document.getElementById('colorD').style.display="none";
 	}
 	//Generate Chat Code-------
+	var imgCodeCombo="";
+	var imgTxtCombo="";
+	var cardPreview = document.getElementById("cardPreview");
+	var imgHtml = document.getElementById("preview-img");
+	function ClearCombo()
+	{
+		imgCodeCombo="";
+		imgTxtCombo="";	
+		cardPreview.innerHTML="";		
+		imgHtml.innerHTML="";		
+	}
 	function ChatCode(id)
 	{
-		var cardPreview = document.getElementById("cardPreview");
-		var str="Null";		
+		
+		var imgCode="Null";		
 		var ps=list_icon[id][0];
 		var x=list_icon[id][1]*1;
 		var y=list_icon[id][2]*1;
@@ -234,17 +245,28 @@
 	  if(Col!="#8c5439")
 		  cTx="<color="+Col+">"+Tx+"</color>";
 	  var sTx="<font color="+Col+">"+Tx+"</font>";
-		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+cTx;
-		cardPreview.innerHTML=str;
+		imgCode = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+cTx;
+		
+		if(document.getElementById('Combo').checked == true)
+			imgCodeCombo=imgCodeCombo+imgCode;
+		else
+			imgCodeCombo=imgCode;
+		cardPreview.innerHTML=imgCodeCombo;
 		//
-		var imgHtml = document.getElementById("preview-img");
+		
 		var imgTxt="NULL";
 		
 		if(list_icon[id][0].indexOf("IconDiyPattern")>=0)
-			imgTxt = "<div id='ShowStyle'><img src=\"img\\patten\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
+			imgTxt = "<img src=\"img\\patten\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
 		else
-			imgTxt = "<div id='ShowStyle'><img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
-		imgHtml.innerHTML=imgTxt;
+			imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
+		
+		if(document.getElementById('Combo').checked == true)
+			imgTxtCombo=imgTxtCombo+imgTxt;
+		else
+			imgTxtCombo=imgTxt;
+	
+		imgHtml.innerHTML="<div id='ShowStyle'>"+imgTxtCombo+"</div>";
 		
 	  const el = document.createElement('textarea');
 	  el.value = str;
