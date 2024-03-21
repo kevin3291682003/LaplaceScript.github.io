@@ -349,31 +349,25 @@ button:hover {
 @keyframes shaking {
     0% {
         filter: drop-shadow(3px 3px 0 #0ff) drop-shadow(-3px -3px 0 #f00);
-        //transform: translate(1px,1px)
     }
 
     20% {
         filter: drop-shadow(-3px 3px 0 #0ff) drop-shadow(3px -3px 0 #f00);
-        //transform: translate(-2px,1px)
     }
 
     40% {
         filter: drop-shadow(3px -3px 0 #0ff) drop-shadow(3px -3px 0 #f00);
-        //transform: translate(1px,-1px)
     }
 
     60% {
         filter: drop-shadow(-3px -3px 0 #0ff) drop-shadow(3px 3px 0 #f00);
-        //transform: translate(-1px,-1px)
     }
 
     80% {
         filter: drop-shadow(-2px 3px 0 #0ff) drop-shadow(-3px 2px 0 #f00);
-        //transform: translate(2px,0px)
     }
 
     100% {
         filter: drop-shadow(-3px 1px 0 #0ff) drop-shadow(1px -3px 0 #f00);
-        //transform: translate(1px,1px)
     }
 }
