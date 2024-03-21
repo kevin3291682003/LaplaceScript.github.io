@@ -362,8 +362,8 @@ button:hover {
 		position:absolute;
 		right:0px;
 		width: 50%;
-		top:30%;
-		height:40%;
+		top:40%;
+		height:55%;
 	}
 	#cellphoneEnd {
 		padding-bottom: 300px;
@@ -380,10 +380,10 @@ button:hover {
 	}
 	#preview-img
 	{
-		top:60%;
+		top:65%;
 	}
 	.emblem {
-		left: 0%;
+		left: -5%;
 		top: 50%;
 	}	
 	.align_top img
