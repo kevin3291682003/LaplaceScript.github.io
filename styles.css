@@ -250,12 +250,19 @@ button:hover {
 }	
 #preview-img img
 {
-	animation: move .4s 1 ease-out;	
+	//animation: move .4s 1 ease-out;	
 }
 
 .preview-container #dat
 {
 	color:rgba(128, 0, 0,0.5);
+}
+#ShowStyle
+{
+	border-radius: 10px;
+	padding:10px;
+	background-color:rgba(252, 244, 225,1);
+	animation: move .4s 1 ease-out;
 }
 
 /* 商標 */

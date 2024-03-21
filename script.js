@@ -126,13 +126,20 @@
 	  var Sx=x/2.5;
 	  var Sy=y/2.5;
 	  ShowColor();
+	  var Col=document.getElementById('color').value;
+	  var Tx=document.getElementById('text').value;
+	  console.log(Col);
+	  var cTx=Tx;
+	  if(Col!="#8c5439")
+		  cTx="<color="+Col+">"+Tx+"</color>";
+	  var sTx="<font color="+Col+">"+Tx+"</font>";
 	  	  var tx=document.getElementById('text').value;
-	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
+	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]"+cTx;
 		cardPreview.innerHTML=str;
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<img src=\"img\\" + CardId + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+tx;
+		imgTxt = "<div id='ShowStyle'><img src=\"img\\" + CardId + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
 		imgHtml.innerHTML=imgTxt;
 
 	const el = document.createElement('textarea');
@@ -184,10 +191,10 @@
 	}
 	function ShowColor()
 	{
-		return;
-		var va=document.getElementById('color').value;
+		//return;
+		var Col=document.getElementById('color').value;
 		var tx=document.getElementById('text').value;
-		document.getElementById('colorT').innerHTML="顏色:"+va;
+		document.getElementById('colorT').innerHTML="顏色:"+Col;
 		if(tx.length>0)document.getElementById('colorD').style.display="block";
 		else document.getElementById('colorD').style.display="none";
 	}
@@ -208,13 +215,19 @@
 	  var Sx=x/2.5;
 	  var Sy=y/2.5;
 	  ShowColor();
-	  var tx=document.getElementById('text').value;
-		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
+	  var Col=document.getElementById('color').value;
+	  var Tx=document.getElementById('text').value;
+	  console.log(Col);
+	  var cTx=Tx;
+	  if(Col!="#8c5439")
+		  cTx="<color="+Col+">"+Tx+"</color>";
+	  var sTx="<font color="+Col+">"+Tx+"</font>";
+		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+cTx;
 		cardPreview.innerHTML=str;
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+tx;
+		imgTxt = "<div id='ShowStyle'><img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx+"</div>";
 		imgHtml.innerHTML=imgTxt;
 		
 	  const el = document.createElement('textarea');
