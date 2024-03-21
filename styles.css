@@ -248,6 +248,10 @@ button:hover {
 	animation: move .4s 1 ease-out;	
 }
 
+.preview-container #dat
+{
+	color:rgba(128, 0, 0,0.5);
+}
 @media screen and (max-width:900px)
 {
 	.bg1 {
@@ -269,6 +273,10 @@ button:hover {
 		border-radius: 10px;
 		color:#FFFFFF;
 		backdrop-filter: blur(5px);
+	}
+	.preview-container #dat
+	{
+		color:rgba(255, 255, 255,0.5);
 	}
 	h2 {
 		font-size: 40px;
