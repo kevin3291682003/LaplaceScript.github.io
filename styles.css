@@ -332,6 +332,7 @@ button:hover {
 		/* overflow: hidden; */
 		/* border: 5px solid red; */
 		animation: shaking .2s steps(6,end) infinite;
+		pointer-events: none;
 	}
 	.emblem span {
 		position: absolute;
@@ -344,6 +345,7 @@ button:hover {
 		color: #FFF;
 		font-weight: 900;
 		/*transition: all 0.5s cubic-bezier(0,0,0,1);*/
+		pointer-events: none;
 	}
 	
 @keyframes shaking {

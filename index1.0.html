@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="bookmark" href="favicon.ico" />
-		<title>風之國度語法產生器2.0 (紅燒熊掌製作)</title>
+		<title>風之國度語法產生器 (紅燒熊掌製作)</title>
 	</head>
 	<body onload="Initial()">
 		
@@ -33,18 +33,14 @@
 			<div class="preview-container">
 				<h3>語法 與 預覽</h3>
 				<!--複製左側卡牌的網址將在這裡顯示</div> -->  
-				<div class="contral">
+				<div>
 					<br/>
-					<label><input type="radio" name="checkboxName" id="small" onclick="SizeModify(0)">小</label>
-					<label><input type="radio" name="checkboxName" id="middle" onclick="SizeModify(0)" checked>正常</label>
-					<label><input type="radio" name="checkboxName" id="big" onclick="SizeModify(0)">大</label>
-					<input type="range" id="IconSize" name="val" min="0" max="100" step="10" onchange="SizeModify(1)"/>  
-					<br/><label for="text">文字<input type="text" id="text" name="text" onchange="SizeModify(1)"/></label>
-					<br/><div id="colorD" style="display:none;"><label for="color" id="colorT">Color</label><input type="color" id="color" name="color" value="#8C5439" onchange="SizeModify(1)" /></div>
+					<label><input type="radio" name="checkboxName" id="big" onclick="SizeModify()">大</label>
+					<label><input type="radio" name="checkboxName" id="small" onclick="SizeModify()" checked>小</label>
 				</div>
 				<textarea id="cardPreview" readonly></textarea>
-			<div id="preview-img">
-			</div>
+				<div id="preview-img">
+				</div>
 				<script>
 				document.write("<font style='font-size:9pt;' id='dat'>" , "更新日期："+document.lastModified+"" , "</FONT>");
 				</script>

@@ -113,17 +113,24 @@
 	  var CardId=list_SCard[cardNumber][0];
 	  var x=list_SCard[cardNumber][1];
 	  var y=list_SCard[cardNumber][2];
-	  if(document.getElementById('big'). checked == true)
-	  {
-		  x=x*2;
-		  y=y*2;
-	  }
-	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]";
+	  
+	  x=x*CalRatio(2);
+	  y=y*CalRatio(2);
+	 // if(document.getElementById('big'). checked == true)
+	  //{
+	//	  x=x*2;
+		//  y=y*2;
+	  //}
+	  x=Math.round(x);
+	  y=Math.round(y);
+	  ShowColor();
+	  	  var tx=document.getElementById('text').value;
+	  str = "[#p spr_path=\"\" spr_name=\"" + CardId + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
 		cardPreview.innerHTML=str;
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<img src=\"img\\" + CardId + ".png\" width=\""+x/3+"\" height=\""+y/3+"\">";
+		imgTxt = "<img src=\"img\\" + CardId + ".png\" width=\""+x/3+"\" height=\""+y/3+"\">"+tx;
 		imgHtml.innerHTML=imgTxt;
 
 	const el = document.createElement('textarea');
@@ -154,7 +161,34 @@
 		
 		iconPreview.innerHTML=strTotal;
 	}
-	
+	function QuickSize()
+	{
+		if(document.getElementById('big'). checked == true)
+			document.getElementById('IconSize').value=80;
+		if(document.getElementById('middle'). checked == true)
+			document.getElementById('IconSize').value=50;
+		if(document.getElementById('small'). checked == true)
+			document.getElementById('IconSize').value=20;
+	}
+	function CalRatio(rat)
+	{
+		var va=document.getElementById('IconSize').value;
+		var Rat1=(((rat)-1)/((80-50)/10));//if 50 =1:1,80=Max:1
+		var Rat2=Math.abs((va-50)/10);
+		if(va>=50)
+			return 1+(Rat1*Rat2);
+		if(va<50)
+			return 1/(1+(Rat1*Rat2));
+	}
+	function ShowColor()
+	{
+		return;
+		var va=document.getElementById('color').value;
+		var tx=document.getElementById('text').value;
+		document.getElementById('colorT').innerHTML="顏色:"+va;
+		if(tx.length>0)document.getElementById('colorD').style.display="block";
+		else document.getElementById('colorD').style.display="none";
+	}
 	//Generate Chat Code-------
 	function ChatCode(id)
 	{
@@ -164,19 +198,23 @@
 		var x=list_icon[id][1]*1.2;
 		var y=list_icon[id][2]*1.2;
 
-	  if(document.getElementById('big'). checked == true)
-	  {
-		  x=x*1.6;
-		  y=y*1.6;
-	  }
+	  x=x*CalRatio(1.6);
+	  y=y*CalRatio(1.6);
+	  //if(document.getElementById('big'). checked == true)
+	  //{
+		//  x=x*1.6;
+		//  y=y*1.6;
+	  //}
 	  x=Math.round(x);
 	  y=Math.round(y);
-		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]";
+	  ShowColor();
+	  var tx=document.getElementById('text').value;
+		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
 		cardPreview.innerHTML=str;
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+x+"\" height=\""+y+"\">";
+		imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+x+"\" height=\""+y+"\">"+tx;
 		imgHtml.innerHTML=imgTxt;
 		
 	  const el = document.createElement('textarea');
@@ -189,8 +227,10 @@
 	  item=id;
 	}
 	
-	function SizeModify()
+	function SizeModify(type)
 	{
+		if(type==0)
+			QuickSize();
 		if(fun==0)
 			generateCard(item);
 		else
