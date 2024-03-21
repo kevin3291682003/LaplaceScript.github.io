@@ -200,13 +200,11 @@
 
 	  x=x*CalRatio(1.92);
 	  y=y*CalRatio(1.92);
-	  //if(document.getElementById('big'). checked == true)
-	  //{
-		//  x=x*1.6;
-		//  y=y*1.6;
-	  //}
 	  x=Math.round(x);
 	  y=Math.round(y);
+	  
+	  var Sx=x/2;
+	  var Sy=y/2;
 	  ShowColor();
 	  var tx=document.getElementById('text').value;
 		str = "[#p spr_path=\"\" spr_name=\"" + ps + "\" width=\""+x+"\" height=\""+y+"\"]"+tx;
@@ -214,7 +212,7 @@
 		//
 		var imgHtml = document.getElementById("preview-img");
 		var imgTxt="NULL";
-		imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+x+"\" height=\""+y+"\">"+tx;
+		imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+tx;
 		imgHtml.innerHTML=imgTxt;
 		
 	  const el = document.createElement('textarea');
