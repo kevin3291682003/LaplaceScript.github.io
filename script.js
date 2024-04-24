@@ -84,6 +84,9 @@
 		['IconDiyPattern24',77,77],['IconDiyPattern25',77,77],['IconDiyPattern26',77,77],['IconDiyPattern27',77,77],
 		['IconDiyPattern28',77,77],['IconDiyPattern29',77,77],['IconDiyPattern30',77,77],['IconDiyPattern31',77,77],
 		
+		//2024/04/24 hello kitty
+		['qq191',72,77],['qq192',94,77],['qq193',76,77],['qq194',76,77],['qq195',76,77],
+		['qq196',72,77],['qq197',94,77],['qq198',76,77],['qq199',76,77],['qq200',76,77],['qq201',76,77],
 	];
 //Fun=================================================
 	var fun=1;//預設標籤
