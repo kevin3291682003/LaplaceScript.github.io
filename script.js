@@ -87,6 +87,11 @@
 		//2024/04/24 hello kitty
 		['qq191',94,77],['qq192',94,77],['qq193',94,77],['qq194',94,77],['qq195',94,77],
 		['qq196',94,77],['qq197',94,77],['qq198',94,77],['qq199',94,77],['qq200',94,77],['qq201',94,77],
+		
+		//HeadWordStyle
+		['HeadWordStyle1120C',96,96],['HeadWordStyle20210701',96,96],['HeadWordStyle20220607B',96,96],['HeadWordStyle20230425A',96,96],
+		['HeadWordStyle20230425B',96,96],['HeadWordStyle20230803B',96,96],['HeadWordStyle20240223A',96,96],['HeadWordStyle20240223B',96,96],
+		
 	];
 //Fun=================================================
 	var fun=1;//預設標籤
@@ -183,6 +188,9 @@
 			var str1="<img src='img/icon/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";
 			if(list_icon[i][0].indexOf("IconDiyPattern")>=0)
 				str1="<img src='img/patten/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";
+			if(list_icon[i][0].indexOf("HeadWordStyle")>=0)
+				str1="<img src='img/HeadWordStyle/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";			
+			
 			strTotal=strTotal+str1;
 		}
 		strTotal="<div class='icon'>"+strTotal;
@@ -237,6 +245,8 @@
 		
 		if(list_icon[id][0].indexOf("IconDiyPattern")>=0)
 			imgTxt = "<img src=\"img\\patten\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
+		else if(list_icon[id][0].indexOf("HeadWordStyle")>=0)
+			imgTxt = "<img src=\"img\\HeadWordStyle\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
 		else
 			imgTxt = "<img src=\"img\\icon\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
 		
