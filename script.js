@@ -91,6 +91,16 @@
 		//HeadWordStyle
 		['HeadWordStyle1120C',96,96],['HeadWordStyle20210701',96,96],['HeadWordStyle20220607B',96,96],['HeadWordStyle20230425A',96,96],
 		['HeadWordStyle20230425B',96,96],['HeadWordStyle20230803B',96,96],['HeadWordStyle20240223A',96,96],['HeadWordStyle20240223B',96,96],
+		//HelloKitty
+		['HeadHelloKitty',178,174,'HelloKitty'],['HeadHelloKitty1',178,174,'HelloKitty'],['HeadHelloKitty2',178,174,'HelloKitty'],['HeadHelloKitty3',178,174,'HelloKitty'],
+		['HeadHelloKitty4',178,174,'HelloKitty'],['HeadHelloKitty5',178,174,'HelloKitty'],['HeadHelloKitty6',178,174,'HelloKitty'],['HeadHelloKitty7',178,174,'HelloKitty'],
+		['HeadHelloKitty8',178,174,'HelloKitty'],
+		['IconEffect20240403A',96,96,'HelloKitty'],['IconEffect20240403B',96,96,'HelloKitty'],['IconPet20240312A',96,96,'HelloKitty'],['IconPet20240312B',96,96,'HelloKitty'],
+		['IconTitle20240223A',96,96,'HelloKitty'],['IconTitle20240223B',96,96,'HelloKitty'],
+		['TitleDanHuangA',68,84,'HelloKitty'],['TitleDanHuangB',68,84,'HelloKitty'],
+		['TitleHK',68,84,'HelloKitty'],['TitleLine210702',68,84,'HelloKitty'],
+		['TitleSanrioA',68,84,'HelloKitty'],['TitleSanrioB',68,84,'HelloKitty'],
+		['ImageKuromi',470,317,'HelloKitty'],['ImageMelody',470,317,'HelloKitty'],
 		
 	];
 //Fun=================================================
@@ -186,10 +196,14 @@
 		
 		for(i=0;i<imax;i++) {
 			var str1="<img src='img/icon/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";
+			let Folder = list_icon[i][3];
+			
 			if(list_icon[i][0].indexOf("IconDiyPattern")>=0)
 				str1="<img src='img/patten/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";
-			if(list_icon[i][0].indexOf("HeadWordStyle")>=0)
-				str1="<img src='img/HeadWordStyle/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";			
+			else if(list_icon[i][0].indexOf("HeadWordStyle")>=0)
+				str1="<img src='img/HeadWordStyle/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";	
+			else if(Folder)
+				str1="<img src='img/"+Folder+"/"+list_icon[i][0]+".png' onclick=\"ChatCode('"+i+"')\">";	
 			
 			strTotal=strTotal+str1;
 		}
@@ -243,7 +257,10 @@
 		
 		var imgTxt="NULL";
 		
-		if(list_icon[id][0].indexOf("IconDiyPattern")>=0)
+		let Folder = list_icon[i][3];
+		if(Folder)
+			imgTxt = "<img src=\"img\\"+Folder+"\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
+		else if(list_icon[id][0].indexOf("IconDiyPattern")>=0)
 			imgTxt = "<img src=\"img\\patten\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
 		else if(list_icon[id][0].indexOf("HeadWordStyle")>=0)
 			imgTxt = "<img src=\"img\\HeadWordStyle\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
