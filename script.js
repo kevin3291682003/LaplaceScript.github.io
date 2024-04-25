@@ -257,7 +257,7 @@
 		
 		var imgTxt="NULL";
 		
-		let Folder = list_icon[i][3];
+		let Folder = list_icon[id][3];
 		if(Folder)
 			imgTxt = "<img src=\"img\\"+Folder+"\\" + ps + ".png\" width=\""+Sx+"\" height=\""+Sy+"\">"+sTx;
 		else if(list_icon[id][0].indexOf("IconDiyPattern")>=0)
