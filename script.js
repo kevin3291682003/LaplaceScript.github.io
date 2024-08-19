@@ -1,6 +1,5 @@
 //Resource List=================================================
-	var list_SCard =[
-['CardSAijiyanhou',396,512],['CardSALiBee',396,512],['CardSALiLadybug',396,512],['CardSAnubisi',396,512],
+	var list_SCard =[['CardSAijiyanhou',396,512],['CardSALiBee',396,512],['CardSALiLadybug',396,512],['CardSAnubisi',396,512],
 ['CardSAoGe',396,512],['CardSBaLei',396,512],['CardSBaqi',396,512],['CardSBingniao',396,512],
 ['CardSBlackCat',396,512],['CardSChuNvZuo',396,512],['CardSDaffodil',396,512],['CardSDafuweng',396,512],
 ['CardSDaisite',396,512],['CardSDandelion',396,512],['CardSDangao',396,512],['CardSDaoDiaoRen',396,512],
@@ -28,6 +27,7 @@
 ['CardSXueXu',396,512],['CardSYanjing',396,512],['CardSYida',396,512],['CardSYiSiCui',396,512],
 ['CardSYouni',396,512],['CardSYuetu',396,512],['CardSYuZaoQian2',396,512],['CardSYuZhe',396,512],
 ['CardSZhengYi',396,512],['CardSZiYing',396,512],
+
 
 		
 		
