@@ -1,7 +1,7 @@
 //Resource List=================================================
 	var list_SCard =[
 //陸板
-['CardSYueShenGong',396,512,"闪·月光·神久夜"],['CardSLibraBlue',396,512,"闪·天秤·娜斯"],['CardSLibraRed',396,512,"闪·魔秤·娜斯"],['CardLibraBlue',396,512,"天秤·娜斯"],['CardLibraRed',396,512,"魔秤·娜斯"],
+['CardSYueShenGong',396,512,"闪·月光·神久夜(陸)"],['CardSLibraBlue',396,512,"闪·天秤·娜斯(陸)"],['CardSLibraRed',396,512,"闪·魔秤·娜斯(陸)"],['CardLibraBlue',396,512,"天秤·娜斯(陸)"],['CardLibraRed',396,512,"魔秤·娜斯(陸)"],
 //台版
 ['CardLianDao',396,512,"惡鐮·藍可"],['CardSGoldWine',396,512],['CardSakura',396,512],['CardProphecy',396,512],
 ['CardSummon44',396,512],['CardSummon43',396,512],['CardSRocky',396,512],['CardSHermes',396,512],
