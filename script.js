@@ -1,14 +1,14 @@
 //Resource List=================================================
 	var list_SCard =[
 //陸板
-['CardSYueShenGong',396,512],['CardLibraBlue',396,512],['CardLibraRed',396,512],['CardSLibraBlue',396,512],['CardSLibraRed',396,512],
+['CardSYueShenGong',396,512,"闪·月光·神久夜"],['CardSLibraBlue',396,512,"闪·天秤·娜斯"],['CardSLibraRed',396,512,"闪·魔秤·娜斯"],['CardLibraBlue',396,512,"天秤·娜斯"],['CardLibraRed',396,512,"魔秤·娜斯"],
 //台版
-['CardLianDao',396,512],['CardSGoldWine',396,512],['CardSakura',396,512],['CardProphecy',396,512],
+['CardLianDao',396,512,"惡鐮·藍可"],['CardSGoldWine',396,512],['CardSakura',396,512],['CardProphecy',396,512],
 ['CardSummon44',396,512],['CardSummon43',396,512],['CardSRocky',396,512],['CardSHermes',396,512],
 ['CardSWitch',396,512],['CardSLifePot',396,512],['CardUniRed',396,512],['CardUniBlue',396,512],
 ['CardSPlump',396,512],['CardSSophia',396,512],['CardSPandora',396,512],['CardPlump',396,512],
 ['CardPandora',396,512],['CardYaoDao',396,512],['CardSShanHuNan',396,512],['CardSPine',396,512],
-['CardCaoMei',396,512],['CardSALiLadybug',396,512],['CardQiangWeiNv',396,512],['CardTongZi',396,512],
+['CardCaoMei',396,512],['CardSALiLadybug',396,512,"閃·瓢蟲狸"],['CardQiangWeiNv',396,512],['CardTongZi',396,512],
 ['CardHuLi',396,512],['CardSShanHu',396,512],['CardZiYing',396,512],['CardSZiYing',396,512],
 ['CardSMuDan',396,512],['CardSFenYing',396,512],['CardSDaffodil',396,512],['CardFenYing',396,512],
 ['CardSMaple',396,512],['CardSummon42',396,512],['CardSALiBee',396,512],['CardSStrawberry',396,512],
@@ -228,6 +228,9 @@
 		for(i=0;i<imax;i++) {
 			var str0="<td>\n<div class='card' onclick=\"generateCard('"+i+"')\">\n";
 			var str1="<img src='img/"+list_SCard[i][0]+".png' >\n<button>生成</button>\n";
+			var CardName=list_SCard[i][3];
+			if(CardName)
+				str1="<img src='img/"+list_SCard[i][0]+".png' >\n<div  class='cardName'>"+CardName+"</div>\n<button>生成</button>\n";
 			var str2="</div>\n</td>\n";
 			if(i%3==0)	strTotal=strTotal+"<tr>\n";
 						strTotal=strTotal+str0+str1+str2;

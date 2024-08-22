@@ -265,6 +265,18 @@ button:hover {
 	animation: move .4s 1 ease-out;
 }
 
+.cardName{
+	color: #864241;
+	position: relative;
+	
+	top: -60px;
+	width:100%;
+	text-align: center;
+	
+	text-shadow: shadow1, shadow2, shadow3;
+	text-shadow: 4px 3px 5px rgba(255,255,255,0.99), 9px 8px 5px rgba(0,0,0,0.99);
+}
+
 /* 商標 */
 	.emblem {
 		position: absolute;
@@ -405,6 +417,6 @@ button:hover {
 	}	
 	textarea
 	{
-		top:60%;
+		top:55%;
 	}
 }
