@@ -11,7 +11,7 @@
 ['CardCaoMei',396,512],['CardSALiLadybug',396,512,"閃·瓢蟲狸"],['CardQiangWeiNv',396,512,"莎莉亞"],['CardTongZi',396,512,"座敷童子"],
 ['CardHuLi',396,512,"白藏主"],['CardSShanHu',396,512,"閃·海薇兒"],['CardZiYing',396,512,"櫻洛絲"],['CardSZiYing',396,512,"閃·櫻洛絲"],
 ['CardSMuDan',396,512],['CardSFenYing',396,512,"閃·艾可希雅"],['CardSDaffodil',396,512,"閃·薇拉"],['CardFenYing',396,512,"艾可希雅"],
-['CardSMaple',396,512,"閃·瑪姫娜"],['CardSummon42',396,512],['CardSALiBee',396,512"閃·蜂蜂狸"],['CardSStrawberry',396,512,"梅芙絲"],
+['CardSMaple',396,512,"閃·瑪姫娜"],['CardSummon42',396,512],['CardSALiBee',396,512,"閃·蜂蜂狸"],['CardSStrawberry',396,512,"梅芙絲"],
 ['CardYanyanluo',396,512],['CardQiangWeiNan',396,512],['CardHongwu',396,512],['CardSLycorisWhite',396,512,"閃·妮婭"],
 ['CardSLily',396,512],['CardSGerbera',396,512],['CardSDandelion',396,512],['CardMushroom',396,512],
 ['CardDandelion',396,512],['CardButterfly',396,512],['CardSLotus',396,512,"閃·菲娜珊"],['CardSLycoris',396,512,"閃·迦樓羅"],
