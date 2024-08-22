@@ -3,9 +3,9 @@
 //陸板
 ['CardSYueShenGong',396,512,"闪·月光·神久夜(陸)"],['CardSLibraBlue',396,512,"闪·天秤·娜斯(陸)"],['CardSLibraRed',396,512,"闪·魔秤·娜斯(陸)"],['CardLibraBlue',396,512,"天秤·娜斯(陸)"],['CardLibraRed',396,512,"魔秤·娜斯(陸)"],
 //台版
-['CardLianDao',396,512,"惡鐮·藍可"],['CardSGoldWine',396,512],['CardSakura',396,512],['CardProphecy',396,512],
+['CardLianDao',396,512,"惡鐮·藍可"],['CardSGoldWine',396,512,"閃·刺酒莫妮卡"],['CardSakura',396,512],['CardProphecy',396,512,"小書仙·芭拉"],
 ['CardSummon44',396,512],['CardSummon43',396,512],['CardSRocky',396,512],['CardSHermes',396,512],
-['CardSWitch',396,512],['CardSLifePot',396,512],['CardUniRed',396,512],['CardUniBlue',396,512],
+['CardSWitch',396,512],['CardSLifePot',396,512],['CardUniRed',396,512,"魅果·貝拉"],['CardUniBlue',396,512,"滌泉·貝拉"],
 ['CardSPlump',396,512],['CardSSophia',396,512],['CardSPandora',396,512],['CardPlump',396,512],
 ['CardPandora',396,512],['CardYaoDao',396,512],['CardSShanHuNan',396,512],['CardSPine',396,512],
 ['CardCaoMei',396,512],['CardSALiLadybug',396,512,"閃·瓢蟲狸"],['CardQiangWeiNv',396,512],['CardTongZi',396,512],
