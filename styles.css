@@ -276,7 +276,7 @@ button:hover {
 	font-weight: bold;
 	font-family: Microsoft JhengHei;
 	text-shadow: shadow1, shadow2, shadow3;
-	text-shadow: 1px 1px 3px #FF79FF, 1px 1px 10px rgba(255,255,255,0.99);
+	text-shadow: 1px 1px 3px #FF79FF, 1px 1px 15px rgba(255,255,255,0.99);
 }
 
 /* 商標 */
