@@ -1,7 +1,7 @@
 //Resource List=================================================
 	var list_SCard =[
 //陸板
-['CardSYueShenGong.png',396,512],['CardLibraBlue.png',396,512],['CardLibraRed',396,512],['CardSLibraBlue',396,512],['CardSLibraRed',396,512],
+['CardSYueShenGong',396,512],['CardLibraBlue',396,512],['CardLibraRed',396,512],['CardSLibraBlue',396,512],['CardSLibraRed',396,512],
 //台版
 ['CardLianDao',396,512],['CardSGoldWine',396,512],['CardSakura',396,512],['CardProphecy',396,512],
 ['CardSummon44',396,512],['CardSummon43',396,512],['CardSRocky',396,512],['CardSHermes',396,512],
