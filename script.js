@@ -78,7 +78,7 @@
 ['Cardfashi',396,512],['CardFangju',396,512,"格雷"],['Cardelike',396,512],['CardDunqishi',396,512],
 ['Carddixinglong',396,512],['CardDaiduo',396,512],['CardDaFengBaoLi',396,512],['CardCunZheng',396,512,"村正"],
 ['Cardcike',396,512],['Cardcaolingxiongdi',396,512],['Cardbingxiang',396,512],['Cardbingjingguai2',396,512],
-['CardBg5',396,512],['CardBanshounv',396,512,格萊妮],['CardBanshounan',396,512,"加吉爾"],['CardBaiqian',396,512,"未來淚"],
+['CardBg5',396,512],['CardBanshounv',396,512,"格萊妮"],['CardBanshounan',396,512,"加吉爾"],['CardBaiqian',396,512,"未來淚"],
 ['Cardanyexiong',396,512],['CardAnubisi',396,512],['CardAngang',396,512,"童子切安綱"],['CardAndeer',396,512],
 ['CardALiYuanQiLi',396,512],['CardALiYuan',396,512],['CardALiWuNiangALi2',396,512],['CardALiWuNiangALi',396,512],
 ['CardALiRenRenLi2',396,512,"忍者狸"],['CardALiPiMaoPiDeALi',396,512],['CardALiMuYangLi',396,512],['CardALiMaoXianLi2',396,512,"勇者狸"],
