@@ -12,12 +12,12 @@
 ['CardHuLi',396,512,"白藏主"],['CardSShanHu',396,512,"閃·海薇兒"],['CardZiYing',396,512,"櫻洛絲"],['CardSZiYing',396,512,"閃·櫻洛絲"],
 ['CardSMuDan',396,512,"閃·丹寇蒂"],['CardSFenYing',396,512,"閃·艾可希雅"],['CardSDaffodil',396,512,"閃·薇拉"],['CardFenYing',396,512,"艾可希雅"],
 ['CardSMaple',396,512,"閃·瑪姫娜"],['CardSummon42',396,512],['CardSALiBee',396,512,"閃·蜂蜂狸"],['CardSStrawberry',396,512,"梅芙絲"],
-['CardYanyanluo',396,512],['CardQiangWeiNan',396,512],['CardHongwu',396,512,"鳶尾花?","HandRed5"],['CardSLycorisWhite',396,512,"閃·妮婭"],
+['CardYanyanluo',396,512,"煙羅羅"],['CardQiangWeiNan',396,512],['CardHongwu',396,512,"鳶尾花?","HandRed5"],['CardSLycorisWhite',396,512,"閃·妮婭"],
 ['CardSLily',396,512,"娥佩拉"],['CardSGerbera',396,512,"閃·奥波里斯"],['CardSDandelion',396,512,"閃・艾彌爾"],['CardMushroom',396,512,"菇麗絲"],
 ['CardDandelion',396,512,"閃・艾彌爾"],['CardButterfly',396,512,"朵妮璐"],['CardSLotus',396,512,"閃·菲娜珊"],['CardSLycoris',396,512,"閃·迦樓羅"],
 ['CardLotus',396,512,"菲娜珊"],['CardSHuangDi',396,512,"閃·夜之君主"],['CardALiNingFuLi2',396,512,"寧芙狸"],['CardWorld',396,512,"柯羅諾"],
 ['CardSStar',396,512,"閃·星軌學徒"],['CardStar',396,512,"星軌學徒"],['CardShenPan',396,512,"墮魔天使"],['CardTianGou',396,512,"天狗狸"],
-['CardSQueen',396,512,"閃·恩普莉絲"],['CardPiPaGui',396,512,"枇杷姬(?)"],['CardTaLuoPai',396,512,"獅心騎士"],['CardSummon41',396,512],
+['CardSQueen',396,512,"閃·恩普莉絲"],['CardPiPaGui',396,512,"緊那羅"],['CardTaLuoPai',396,512,"獅心騎士"],['CardSummon41',396,512],
 ['CardSummon40',396,512],['CardSummon39',396,512],['CardSummon38',396,512],['CardSummon37',396,512],
 ['CardSummon36',396,512],['CardSummon35',396,512],['CardSummon34',396,512],['CardSMoon',396,512,"閃·特彌絲"],
 ['CardSTaLuoPai',396,512,"閃·獅心騎士"],['CardMoon',396,512,"特彌絲"],['CardSDaoDiaoRen',396,512,"閃·倒懸者"],['CardDaoDiaoRen',396,512,"倒懸者"],
@@ -50,7 +50,7 @@
 ['CardSMuYang',396,512,"閃·阿蒙拉之女"],['CardSMojie',396,512,"閃·艾蒂爾斯"],['CardSMoFashi',396,512,"閃・艾格文"],['CardSMoFaShaoNv',396,512,"閃·星靈魔導師"],
 ['CardSMeirenyu',396,512,"閃·人魚姫"],['CardSLuoLin',396,512],['CardSLuna',396,512,"閃·露娜"],['CardSLihua',396,512,"閃·梨花"],
 ['CardSLeina',396,512,"閃·寒霜蕾娜"],['CardSLasiteya',396,512],['CardSLangLing',396,512,"閃·狼魂戴斯特"],['CardSLang',396,512,"閃·小狼貝貝"],
-['CardSkyLight',396,512],['CardSkyBird',396,512],['CardSkeluonuosi',396,512],['CardSJuXieZuo',396,512,"閃·美洛"],
+['CardSkyLight',396,512,"禦星·天照"],['CardSkyBird',396,512],['CardSkeluonuosi',396,512],['CardSJuXieZuo',396,512,"閃·美洛"],
 ['CardSJinniuzuo',396,512],['CardSijienv',396,512,"凱特琳"],['CardSijienan',396,512,"斯蒂芬"],['CardSHuoNiao',396,512],
 ['CardShuangzi',396,512],['CardShuangYuZuo',396,512],['CardSHongyeshou',396,512],['CardSHongTaoShaoNv',396,512],
 ['Cardshicaolong',396,512],['CardSheshou',396,512],['CardSHeimao2',396,512],['CardSHeimao',396,512],
@@ -97,8 +97,8 @@
 ['Cardhuajingling2',396,512,"花精靈"],['Cardluna',396,512,"露娜"],['CardJuMao',396,512,"橘貓"],['CardLiu',396,512,"琉·璃昂"],
 ['CardALiBuLunXiErLi',396,512,"布輪西狸"],['Carddeluosihuoyan',396,512,"德羅斯"],['Cardjiaerdan',396,512],['Carddeluosi',396,512],
 ['Cardhuojingmo',396,512],['CardALiNvWangLi',396,512,"女王狸"],['CardALiZhenTanLi',396,512,"學霸狸"],['Cardjumored',396,512,"亞斯巨魔"],
-['Cardjianshi',396,512,"奔流劍士"],['CardCinnamorollF',396,512,"大耳狸"],['CardCinnamorollE',396,512],['CardCinnamorollD',396,512],
-['Cardjierdan',396,512],['CardCinnamorollC',396,512],['CardCinnamorollB',396,512],['CardCinnamorollA',396,512],
+['Cardjianshi',396,512,"奔流劍士"],['CardCinnamorollF',396,512],['CardCinnamorollE',396,512],['CardCinnamorollD',396,512],
+['Cardjierdan',396,512],['CardCinnamorollC',396,512,"大耳狸"],['CardCinnamorollB',396,512],['CardCinnamorollA',396,512],
 ['CardALiNvPuLi',396,512,"女僕狸"],['Cardjiguanshouwei',396,512,"金屬衛士"],['CardALiShouWeiLi',396,512],['CardALiNingFuLi',396,512,"寧芙狸"],
 ['Cardcalijier',396,512,"卡莉吉爾"],['Cardliweitan',396,512],['CardCaiShen126',396,512],['Cardjipusai',396,512],
 ['Cardleila',396,512],['CardALiRenRenLi',396,512,"忍者狸"],['Cardaoge',396,512,"奧格"],['CardALiBeiErLiLi',396,512,"貝爾狸"],
@@ -117,7 +117,7 @@
 		
 		//連動
 		['CardCinnamorollA',396,512],
-		['CardCinnamorollB',396,512],['CardCinnamorollC',396,512],['CardCinnamorollD',396,512],['CardCinnamorollE',396,512],
+		['CardCinnamorollB',396,512],['CardCinnamorollC',396,512,"大耳狸"],['CardCinnamorollD',396,512],['CardCinnamorollE',396,512],
 
 	];
 	var list_icon =[//texturepack_expressionicon
