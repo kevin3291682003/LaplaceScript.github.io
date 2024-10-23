@@ -1,5 +1,7 @@
 //Resource List=================================================
 	var list_SCard =[
+['CardShangwen',396,512,"岩谷尚文"],['CardLafu',396,512,"拉芙塔莉雅"],['CardFeiluo',396,512,"菲洛"],
+
 //陸板
 ['CardSYueShenGong',396,512,"闪·月光·神久夜(陸)"],//台版
 
