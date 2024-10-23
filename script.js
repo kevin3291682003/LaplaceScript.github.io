@@ -179,6 +179,14 @@
 		['qq185',94,77],['qq186',94,77],['qq187',94,77],
 		['qq188',72,77],['qq189',94,77],['qq190',76,77],
 		
+		//2024/04/24 hello kitty
+		['qq191',94,77],['qq192',94,77],['qq193',94,77],['qq194',94,77],['qq195',94,77],
+		['qq196',94,77],['qq197',94,77],['qq198',94,77],['qq199',94,77],['qq200',94,77],['qq201',94,77],
+		//2024/10/23
+		['qq202',94,77],['qq203',94,77],['qq204',94,77],['qq205',94,77],['qq206',94,77],['qq207',94,77],
+		['qq208',94,77],['qq209',94,77],['qq210',94,77],['qq211',94,77],['qq212',94,77],['qq213',94,77],
+		
+		
 		['IconDiyPattern1',77,77],['IconDiyPattern2',77,77],['IconDiyPattern3',77,77],
 		['IconDiyPattern4',77,77],['IconDiyPattern5',77,77],['IconDiyPattern6',77,77],['IconDiyPattern7',77,77],
 		['IconDiyPattern8',77,77],['IconDiyPattern9',77,77],['IconDiyPattern10',77,77],['IconDiyPattern11',77,77],
@@ -187,13 +195,6 @@
 		['IconDiyPattern20',77,77],['IconDiyPattern21',77,77],['IconDiyPattern22',77,77],['IconDiyPattern23',77,77],
 		['IconDiyPattern24',77,77],['IconDiyPattern25',77,77],['IconDiyPattern26',77,77],['IconDiyPattern27',77,77],
 		['IconDiyPattern28',77,77],['IconDiyPattern29',77,77],['IconDiyPattern30',77,77],['IconDiyPattern31',77,77],
-		
-		//2024/04/24 hello kitty
-		['qq191',94,77],['qq192',94,77],['qq193',94,77],['qq194',94,77],['qq195',94,77],
-		['qq196',94,77],['qq197',94,77],['qq198',94,77],['qq199',94,77],['qq200',94,77],['qq201',94,77],
-		//2024/10/23
-		['qq202',94,77],['qq203',94,77],['qq204',94,77],['qq205',94,77],['qq206',94,77],['qq207',94,77],
-		['qq208',94,77],['qq209',94,77],['qq210',94,77],['qq211',94,77],['qq212',94,77],['qq213',94,77],
 		
 		//HeadWordStyle
 		['HeadWordStyle1120C',96,96],['HeadWordStyle20210701',96,96],['HeadWordStyle20220607B',96,96],['HeadWordStyle20230425A',96,96],
