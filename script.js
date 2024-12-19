@@ -1,10 +1,13 @@
 //Resource List=================================================
 	var list_SCard =[
+['CardYisicuiGold',396,512,"月見·夜空?"],
+['CardTheMusic',396,512,"歌姬·天愛"],
+['CardAnnan',396,512,"天雷祭司·安南"],
+['CardSJiaSuo',396,512,""],
+//連動
 ['CardShangwen',396,512,"岩谷尚文"],['CardLafu',396,512,"拉芙塔莉雅"],['CardFeiluo',396,512,"菲洛"],
-
-//陸板
-['CardSYueShenGong',396,512,"闪·月光·神久夜(陸)"],//台版
-
+//
+['CardSYueShenGong',396,512,"閃·月光·神久夜"],
 ['CardSDianJinShi',396,512,"閃·天仙·蓮姬"],
 ['CardSDojiri',396,512,"閃·赤刀妖姬"],
 ['CardSLibraBlue',396,512,"天·魔秤·娜斯"],['CardSLibraRed',396,512,"閃·魔秤·娜斯"],['CardLibraBlue',396,512,"天秤·娜斯"],['CardLibraRed',396,512,"魔秤·娜斯"],
