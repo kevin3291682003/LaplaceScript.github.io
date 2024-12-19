@@ -1,6 +1,6 @@
 //Resource List=================================================
 	var list_SCard =[
-['CardYisicuiGold',396,512,"神福·依絲翠?"],
+['CardYisicuiGold',396,512,"福祿·依絲翠","護符7階破甲"],
 ['CardTheMusic',396,512,"歌姬·天愛"],
 ['CardAnnan',396,512,"天雷祭司·安南"],
 ['CardSJiaSuo',396,512,"閃·鏈刃·藍蓮"],
