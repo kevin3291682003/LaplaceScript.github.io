@@ -1,12 +1,15 @@
 //Resource List=================================================
 	var list_SCard =[
-['CardYisicuiGold',396,512,"月見·夜空?"],
+['CardYisicuiGold',396,512,"神福·依絲翠?"],
 ['CardTheMusic',396,512,"歌姬·天愛"],
 ['CardAnnan',396,512,"天雷祭司·安南"],
-['CardSJiaSuo',396,512,""],
+['CardSJiaSuo',396,512,"閃·鏈刃·藍蓮"],
 //連動
 ['CardShangwen',396,512,"岩谷尚文"],['CardLafu',396,512,"拉芙塔莉雅"],['CardFeiluo',396,512,"菲洛"],
 //
+['CardSQin',396,512,"閃·光明·巴德爾"],
+['CardSTengu',396,512,"閃·赤鬼武士"],
+
 ['CardSYueShenGong',396,512,"閃·月光·神久夜"],
 ['CardSDianJinShi',396,512,"閃·天仙·蓮姬"],
 ['CardSDojiri',396,512,"閃·赤刀妖姬"],
@@ -20,7 +23,7 @@
 ['CardHuLi',396,512,"白藏主"],['CardSShanHu',396,512,"閃·海薇兒"],['CardZiYing',396,512,"櫻洛絲"],['CardSZiYing',396,512,"閃·櫻洛絲"],
 ['CardSMuDan',396,512,"閃·丹寇蒂"],['CardSFenYing',396,512,"閃·艾可希雅"],['CardSDaffodil',396,512,"閃·薇拉"],['CardFenYing',396,512,"艾可希雅"],
 ['CardSMaple',396,512,"閃·瑪姫娜"],['CardSummon42',396,512],['CardSALiBee',396,512,"閃·蜂蜂狸"],['CardSStrawberry',396,512,"梅芙絲"],
-['CardYanyanluo',396,512,"煙羅羅"],['CardQiangWeiNan',396,512],['CardHongwu',396,512,"鳶尾花?","HandRed5"],['CardSLycorisWhite',396,512,"閃·妮婭"],
+['CardYanyanluo',396,512,"煙羅羅"],['CardQiangWeiNan',396,512,"澤維斯"],['CardHongwu',396,512,"冰雪之靈","HandRed5"],['CardSLycorisWhite',396,512,"閃·妮婭"],
 ['CardSLily',396,512,"娥佩拉"],['CardSGerbera',396,512,"閃·奥波里斯"],['CardSDandelion',396,512,"閃·艾彌爾"],['CardMushroom',396,512,"菇麗絲"],
 ['CardDandelion',396,512,"閃·艾彌爾"],['CardButterfly',396,512,"朵妮璐"],['CardSLotus',396,512,"閃·菲娜珊"],['CardSLycoris',396,512,"閃·迦樓羅"],
 ['CardLotus',396,512,"菲娜珊"],['CardSHuangDi',396,512,"閃·夜之君主"],['CardALiNingFuLi2',396,512,"寧芙狸"],['CardWorld',396,512,"柯羅諾"],
