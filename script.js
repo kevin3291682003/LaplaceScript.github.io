@@ -217,6 +217,20 @@
 		['TitleSanrioA',68,84,'HelloKitty'],['TitleSanrioB',68,84,'HelloKitty'],
 		['ImageKuromi',470,317,'HelloKitty'],['ImageMelody',470,317,'HelloKitty'],
 		
+		['deco20220525B',67,57,'chatbubble'],['deco20220525D',62,34,'chatbubble'],
+		['deco20220824B',56,57,'chatbubble'],['deco20221111A',82,44,'chatbubble'],
+		['deco20230412A',63,43,'chatbubble'],['deco20230412B',54,63,'chatbubble'],
+		['deco20230412D',52,55,'chatbubble'],['deco20230802B',90,55,'chatbubble'],
+		['deco20230802D',44,69,'chatbubble'],['decoHead1120',54,57,'chatbubble'],
+		['decoHK20240226B',65,68,'chatbubble'],['decoHK20240226C',43,46,'chatbubble'],
+		['decoHK20240226D',67,61,'chatbubble'],['decoJi0909',76,76,'chatbubble'],
+		['decoLi0909',92,81,'chatbubble'],['DecoLine1',61,42,'chatbubble'],
+		['DecoLine2',58,32,'chatbubble'],['DecoMarquee4',104,76,'chatbubble'],
+		['DecoMonth1',59,60,'chatbubble'],['decoSnowB1',81,81,'chatbubble'],
+		['decoSnowB2',68,54,'chatbubble'],['DecoSumA200609',69,67,'chatbubble'],
+		['DecoTears13',92,68,'chatbubble'],['DecoYaoWeiB0426',56,66,'chatbubble'],
+		['DecoYaoWeiD0426',57,63,'chatbubble']
+		
 	];
 //Fun=================================================
 	var fun=1;//預設標籤
