@@ -1,5 +1,15 @@
 //Resource List=================================================
 	var list_SCard =[
+['CardSIceRabbit',396,512,"閃·暖冬·依絲翠","護符11階"],
+['CardSHeiMaoPlant',396,512,"閃·刺藤狩獵者","防具11階"],
+['CardSHeiMaoIce',396,512,"閃·堅冰狩獵者","防具11階"],
+['CardHeiMaoPlant',396,512,"刺藤狩獵者","防具11階"],
+['CardHeiMaoIce',396,512,"堅冰狩獵者","防具11階"],
+['CardSPinkIce',396,512,"閃·冰紗女王","武器11階"],
+['CardXiaoMoGu',396,512,"?","?"],
+['CardXiaoYeZi',396,512,"?","?"],
+
+
 ['CardYisicuiGold',396,512,"福祿·依絲翠","護符7階破甲"],
 ['CardTheMusic',396,512,"歌姬·天愛"],
 ['CardAnnan',396,512,"天雷祭司·安南"],
